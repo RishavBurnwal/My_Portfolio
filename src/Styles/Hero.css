@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero-section {
+  min-height: 55vh; /* reduced height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0; /* smaller padding */
+  background: linear-gradient(135deg, #1a2a6c, #2a5298, #764ba2);
+  color: white;
+  width: 100%;
+}
+
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* keep image + text closer */
+  gap: 30px;
+  width: 100%;
+  padding: 0 5%;
+  flex-wrap: wrap;
+}
+
+.hero-content{
+    margin-left: 20px;
+    padding: 20px 0px 0px 0px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+/* Removed the black border from all hero-content links */
+.hero-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border: rgb(190, 174, 174) 2px solid;
+  font-size:large;
+  border-radius: 13px;
+  line-height: 40px;
+  margin-right: 20px
+  
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-buttons a.primary {
+  background: #0072ff;
+  border: 2px solid #0072ff;
+  color: white;
+}
+
+.hero-buttons a.primary:hover {
+  background: #0056cc;
+  border-color: #0056cc;
+}
+
+.hero-buttons a.secondary {
+  background: transparent;
+  border: 2px solid #0072ff;
+  color: #0072ff;
+}
+
+.hero-buttons a.secondary:hover {
+  background: #0072ff;
+  color: white;
+}
+.profile-image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image{
+    padding: 20px 120px 0px 0px;
+}
